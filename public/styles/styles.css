@@ -1,3 +1,35 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+body {
+  background-color: #201f1f;
+}
+
+h1 {
+  font-size: 8em;
+  font-weight: bold;
+  font-family: 'Freckle Face', cursive;
+  color: #f5d20b;
+}
+
+h4 {
+  font-size: 4em;
+  font-weight: bold;
+  font-family: 'Freckle Face', cursive;
+  color: #f5d20b;
+}
+
+h6 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Freckle Face', cursive;
+  color: #f5d20b;
+}
+
+hr {
+  background: #f5d20b;
+  height: 0.5em;
+  border-radius: 8px;
+}
+
