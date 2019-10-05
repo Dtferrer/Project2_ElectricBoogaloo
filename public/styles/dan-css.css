@@ -1,0 +1,41 @@
+.jumbotron{
+    background: #f4d06f;
+    color: #333333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: #fcf5e3
+}
+
+#bee{
+    float: right;
+}
+
+#links {
+   
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+   }
+
+   #accounts, {
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515
+   }
+
+   #text1{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+
+   }
