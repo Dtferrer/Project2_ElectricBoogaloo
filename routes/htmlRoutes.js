@@ -51,7 +51,7 @@ module.exports = function(app) {
   });
 
   app.get("/videos", function(req, res) {
-    res.render('videos');
+    res.render("videos");
   });
 
   // Render 404 page for any unmatched routes
