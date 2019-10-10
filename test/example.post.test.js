@@ -40,4 +40,3 @@ describe("POST /api/accounts", function() {
       });
   });
 });
-
