@@ -1,6 +1,5 @@
-  <body>
-        
-   
+  <div id="loginHome">
+
    <div class="col-8 offset-2">
         <h2 class="text-center">Welcome to Buzzy Bee Banking!</h2>  
     <form class="clearfix mb-4" action="POST">
@@ -15,23 +14,30 @@
         </div>
        
         <button type="submit" class="button">Sign In</button>
-        or <a href="createUsr.html" class="card-link">Sign Up!</a>
+        or <a href="" class="card-link">Sign Up!</a>
       </form>
       <img src="sccpre.cat-beehive-png-5160421.png">
 </div>
+<footer class="footer">@2019 Danica Ferrer, Daniel Gomez, Ruth Vazquez & Scott Goodrich</footer>
 <script type="text/javascript">
 
-$(document).ready(function() {
-  $('.button').on('click', function() {
-    document.getElementById("")
+//this will check  userid & password
 
-  });
-});
+function check(form) {
+  if(form.userid.value == "ruth" && form.pswrd.value == "vazquez") {
+    //if username and password match it will take the user to their account (Dan's Page)
+    console.log("it worked!!");
+    //target.html needs to be changed, 
+    window.open('target.html')
+  }
+  else {
+    alert("Oops! Try Again :(")
+  }
+}
 
 </script>
-
-   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+</div>
