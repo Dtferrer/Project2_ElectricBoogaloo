@@ -22,9 +22,6 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-app.get("/account-page", function(req, res) {
-  res.render("account-page");
-});
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
