@@ -1,4 +1,3 @@
-
 body {
     background-color: #151515;
   }
@@ -53,7 +52,7 @@ body {
     width: 95%;
   }
   
-  #buyskins {
+  #css-toggle {
     width: 16em;
     margin-top: 1.5em;
     background-color: #333333;
@@ -75,7 +74,7 @@ body {
     text-align: center;
   }
   
-  #accounts, #games, #main {
+  #accounts, #games, #shop {
     width: 17em;
     background-color: #f9ca2c;
     border: .3em solid #151515;

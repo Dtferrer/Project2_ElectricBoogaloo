@@ -53,7 +53,7 @@ hr {
   width: 95%;
 }
 
-#buyskins {
+#css-toggle {
   width: 16em;
   margin-top: 1.5em;
   background-color: #151515;
@@ -62,12 +62,28 @@ hr {
   padding-top: 1em;
 }
 
-#buyrate, #buybalance, #play {
+#rate, #balance, #play {
   width: 16em;
   background-color: #151515;
-  border: #f9ca2c;
   border-radius: 8px;
   padding-top: 1em;
+}
+
+#logout {
+  width: 13em;
+  background-color: #151515;
+  border: .3em solid #f9ca2c;
+  border-radius: 8px;
+  padding-top: 1em;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+
+#logouttext {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Luckiest Guy', cursive;
+  color: #f9ca2c;
 }
 
 
@@ -75,7 +91,7 @@ hr {
   text-align: center;
 }
 
-#accounts, #games, #main {
+#accounts, #games, #shop, #videos {
   width: 17em;
   background-color: #f9ca2c;
   border: .3em solid #151515;
@@ -85,11 +101,12 @@ hr {
 }
 
 #accounts {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
-#games, #main {
-  margin-bottom: 2em;
+#games, #shop {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #darkmode {

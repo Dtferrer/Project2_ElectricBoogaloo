@@ -6,24 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/styles/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" title="darkmode" href="../public/styles/darkmode.css">
     <link rel="stylesheet" title="normalmode" href="../public/styles/normalmode.css">
+    <link rel="stylesheet alternate" title="darkmode" href="../public/styles/darkmode.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <title>Games!</title>
 </head>
-<body>
+<body class="normal">
     <div class="container">
 
         <div class="col-lg-3" id="linkscolumn">
             <div class="row" id="buttondiv">
-                <a href="../games.handlebars"><button id="accounts"><h6>View Accounts!</h6></button></a>
-            </div>
-            <div class="row">
-                <br><br>
+                <a href="/accounts"><button id="accounts"><h6>View Accounts!</h6></button></a>
             </div>
             <div class="row" id="buttondiv">
-                <a href="../views/index.handlebars"><button id="main"><h6>Main Page!</h6></button></a>
+                <a href="/shop"><button id="shop"><h6>Busy Bee Shop!</h6></button></a>
             </div>
+            <div class="row" id="buttondiv">
+                    <a href="/videos"><button id="videos"><h6>Watch Videos!</h6></button></a>
+                </div>
+                <div class="row" id="buttondiv">
+                    <a href="/login"><button id="logout"><p id="logouttext">Log Out!</p></button></a>
+                </div>
             <div class="row">
                 <img id="bee" src="../public/images/Bee.png" height="400" width="400">
             </div>
