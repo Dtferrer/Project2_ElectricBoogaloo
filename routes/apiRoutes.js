@@ -1,26 +1,33 @@
 var db = require("../models");
-
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // Create a new user
+  app.post("/api/accounts", function(req, res) {
+    db.Account.create(req.body).then(function(dbAccount) {
+      res.json(dbAccount);
     });
   });
-
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Find existing user
+  app.get("/api/accounts", function(req, res) {
+    db.Account.findOne({
+      where: { username: req }
+    }).then(function(dbAccount) {
+      res.json(dbAccount);
     });
   });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.json(dbExample);
+  // Find all users
+  app.get("/api/accounts", function(req, res) {
+    db.Account.findAll({}).then(function(dbAccount) {
+      res.json(dbAccount);
+    });
+  });
+  // Track user account banking information
+  app.get("/api/accounts/:accountId", function(req, res) {
+    db.Account.findOne({
+      where: {
+        accountId: req.params.accountId
+      }
+    }).then(function(dbAccount) {
+      res.json(dbAccount);
     });
   });
 };
