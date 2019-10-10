@@ -2,3 +2,32 @@
   line-height: 2.5;
 }
 
+<<<<<<< HEAD
+=======
+#logBody {
+  background: #FCF5E3;
+  font-family: 'Luckiest Guy', cursive;
+  
+ 
+}
+#beeHive {
+  width: 250px;
+  float: right;
+
+}
+#title1 {
+color: #f4d06f;
+-webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: black;
+font-size: 60px;
+padding: 45px;
+}
+
+#signinBtn {
+  color:#f9ca2c;
+  background: #151515;
+  border: 5px solid #f4d06f;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+>>>>>>> 8f2594fb8ea9c09cf249e663f6d7fc8f6858bf2f
