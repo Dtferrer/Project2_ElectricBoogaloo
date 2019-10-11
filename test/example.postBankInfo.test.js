@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 
 var request;
 
-describe("GET /api/accounts", function() {
+describe("GET /api/accounts/:accountId", function() {
   // Before each test begins, create a new request server for testing
   // & delete all examples from the db
   beforeEach(function() {
@@ -17,8 +17,10 @@ describe("GET /api/accounts", function() {
     return db.sequelize.sync({ force: true });
   });
 
-  it("should find all accounts", function(done) {
+  it("should return user's bank information", function(done) {
     // Add some examples to the db to test with
+
+    var reqUser = "First Example";
 
     db.Account.bulkCreate([
       {
@@ -35,7 +37,8 @@ describe("GET /api/accounts", function() {
         checking: 60,
         savings: 40
       }
-    ]).then(function() {
+    ]);
+    db.Account.findOne({ where: { username: reqUser } }).then(function() {
       // Request the route that returns all examples
       request.get("/api/accounts").end(function(err, res) {
         var responseStatus = res.status;

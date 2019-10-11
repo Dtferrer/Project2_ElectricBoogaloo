@@ -2,7 +2,7 @@
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
-var $exampleInputPassword1 = $("#exampleInputPassword1");
+//var $exampleInputPassword1 = $("#exampleInputPassword1");
 
 // The API object contains methods for each kind of request we'll make
 var API = {

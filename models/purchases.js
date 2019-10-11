@@ -9,7 +9,8 @@ module.exports = function(sequelize, DataTypes) {
     Purchase.belongsTo(models.Account, {
       foreignkey: {
         allowNull: false
-      }
+      },
+      constraints: false
     });
   };
 
