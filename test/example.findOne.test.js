@@ -17,10 +17,10 @@ describe("GET /api/accounts", function() {
     return db.sequelize.sync({ force: true });
   });
 
-  it("should find all accounts", function(done) {
+  it("should find a specific account", function(done) {
     // Add some examples to the db to test with
 
-    //var reqUser = "First Example";
+    var reqUser = "First Example";
 
     db.Account.bulkCreate([
       {
@@ -37,7 +37,8 @@ describe("GET /api/accounts", function() {
         checking: 60,
         savings: 40
       }
-    ]).then(function() {
+    ]);
+    db.Account.findOne({ where: { username: reqUser } }).then(function() {
       // Request the route that returns all examples
       request.get("/api/accounts").end(function(err, res) {
         var responseStatus = res.status;
