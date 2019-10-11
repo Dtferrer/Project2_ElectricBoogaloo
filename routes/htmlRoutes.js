@@ -1,23 +1,73 @@
 var db = require("../models");
+console.log("db.Purchase", db.Purchase);
+console.log("db.Account", db.Account);
 
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
+    res.render("index", {
+      msg: "Welcome!"
     });
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
+  app.get("/login", function(req, res) {
+    res.render("index", {
+      msg: "Login"
     });
+  });
+
+  //accounts page
+  app.get("/accounts/:accountId", function(req, res) {
+    console.log("finding account...");
+    db.Account.findAll({
+      where: {
+        AccountId: req.params.accountId
+      }
+    })
+      .then(function(accounts) {
+        console.log("accounts", accounts);
+        res.render("account-page", {
+          msg: "Hey!",
+          accounts: accounts
+        });
+      })
+      .catch(function(err) {
+        console.log(
+          "ERR - Failed to load Accounts for User ID: " + userId,
+          err
+        );
+        res.redirect("404");
+      });
+  });
+
+  // Load example page and pass in an example by id
+  app.get("/accounts/:accountId/shop", function(req, res) {
+    console.log("finding purchases...");
+    db.Purchase.findAll({ where: { AccountId: req.params.accountId } })
+      .then(function(purhases) {
+        console.log("purchases", purhases);
+        res.render("shop", {
+          purhases: purhases
+        });
+      })
+      .catch(function(err) {
+        console.log("ERR - Failed to load purchases", err);
+        res.render("404");
+      });
+  });
+
+  app.get("/videos", function(req, res) {
+    res.render("videos");
+  });
+
+  // Load shop page
+  app.get("/shop", function(req, res) {
+    res.render("shop");
+  });
+
+  // Load games page
+  app.get("/games", function(req, res) {
+    res.render("games");
   });
 
   // Render 404 page for any unmatched routes
