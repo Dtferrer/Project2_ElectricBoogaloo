@@ -6,7 +6,6 @@ var expect = chai.expect;
 
 // Setting up the chai http plugin
 chai.use(chaiHttp);
-
 var request;
 
 describe("POST /api/accounts", function() {
@@ -16,7 +15,6 @@ describe("POST /api/accounts", function() {
     request = chai.request(server);
     return db.sequelize.sync({ force: true });
   });
-
   it("should save a user", function(done) {
     // Create an object to send to the endpoint
     var reqBody = {
@@ -26,7 +24,6 @@ describe("POST /api/accounts", function() {
       checking: 0,
       savings: 0
     };
-
     // POST the request body to the server
     request
       .post("/api/accounts")
