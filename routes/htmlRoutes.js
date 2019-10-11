@@ -16,6 +16,13 @@ module.exports = function(app) {
     });
   });
 
+  //create user
+  app.get("/signup", function(req, res) {
+    res.render("signup", {
+      msg: ""
+    });
+  });
+
   //accounts page
   app.get("/accounts/:accountId", function(req, res) {
     console.log("finding account...");
