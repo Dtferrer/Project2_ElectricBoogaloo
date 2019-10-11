@@ -19,6 +19,7 @@ describe("GET /api/accounts", function() {
 
   it("should find all accounts", function(done) {
     // Add some examples to the db to test with
+
     //var reqUser = "First Example";
 
     db.Account.bulkCreate([
