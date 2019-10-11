@@ -8,11 +8,7 @@
   },
   "test": {
     "username": "root",
-<<<<<<< HEAD
     "password": "Baseballjunkie1",
-=======
-    "password": "gr2d0444",
->>>>>>> 2f818a0fdafd02c741b10b2e2370adc6b46476d7
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
