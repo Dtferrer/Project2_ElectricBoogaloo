@@ -1,0 +1,87 @@
+ 
+ <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+
+                  <h1 id="links" class="display-4">Welcome {{ username }} to your account details page!</h1>
+
+                  <h1 style="font-family: 'Luckiest Guy', cursive;" class="lead">ON THIS PAGE YOU WILL BE ABLE TO VIEW YOUR ACCOUNT INFORMATION, LIKE HOW MANY COINS YOU HAVE ACCUMULATED. IT DISPLAYS BOTH OF YOU ACCOUNTS (SAVINGS AND CHECKINGS) IF YOU HOVER OVER ANY OF YOUR ACCOUNTS YOU WILL SEE A SHORT DESCRIPTION OF THE ACCOUNT AND EDUCATIONAL INFORMATION,  YOU WILL ALSO BE ABLE TO FIND LINKS TO GAMES WHERE YOU CAN PLAY AND HAVE THE OPPORTUNITY TO WIN MORE COINS, THERE'S ALSO A SHOP WHERE YOU CAN SPEND YOUR COINS ON DIFFERENT COOL STUFF <br><img id="bee" src="kissclipart-cartoon-bee-clipart-european-dark-bee-insect-fffe407b1dcaf08f.png" height="80px" width="80px"></h1>
+                </div>
+        </div>
+        <div class="container">
+            <div class="text-center"><h1 id="accounts">Balance----------<span class="badge badge-danger" data-toggle="popover" title="YOUR BALANCE IS" data-content="THE MONEY YOU HAVE ACCUMULATED AT THIS EXACT MONENT AND IT WILL INCREASE OR DECREASE DEPENDING ON YOUR TRANSACTIONS."> $100</span></h1>
+            </div>
+            <br>
+            <br>
+                <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                 <!--SAVINGS-->
+                <h1><span id="accounts" class="badge badge-danger"  data-toggle="popover" title="SAVINGS IS " data-content="AN ACCOUNT NOT INTENDED FOR DAILY USE, BUT IS INSTEAD MEANT TO STAY IN THE ACCOUNT, BE SAVED IN THE ACCOUNT SO THAT IT MIGHT EARN INTEREST OVER TIME.">SAVINGS  $50</span></h1>                 
+                </div>
+
+                
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                 <!--CHECKINGS-->
+                 <h1><span id="accounts" class="badge badge-danger"  data-toggle="popover" title=" CHECKING IS " data-content=" A TYPE OF BANK DEPOSIT ACCOUNT THAT IS DESIGNED FOR EVERYDAY MONEY TRANSACTIONS">CHECKING  $50</span></h1>  
+                
+                </div>            
+        </div>  
+        <br>
+        <br>  
+        <div class="container">
+            <div class="row">
+                <div id="text1" class="col-lg-5">BANKING ONLINE HELPS KEEPING TRACK OF YOUR INCOMES AND EXPENSES <br> ⊛INCOME IS THE MONEY YOU MAKE <br>⊛EXPENSES ARE WHAT YOU SPEND YOUR MONEY(COINS) ON</div>
+                <div class="col-lg-5">
+
+                    <!--transfer options-->
+
+                    <select class="form-control form-control-sm">Select Account
+                            <option>TRANSFER BETWEEN ACCOUNTS</option>
+                            <option>From Savings to Checking</option>
+                            <option>From Checking to Savings</option>
+                          </select>
+                          <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="TYPE AMOUNT" aria-label="amount wished to transfer" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button">MAKE TRANSFER</button>                               
+                                </div>
+                                
+                              </div>
+
+                    <!--transfer options end-->
+
+                    <span  class="badge"  data-toggle="popover" title="HEY KIDS!" data-content="HAVE FUN PLAYING AND REMEMBER TO BE RESPONSIBLE WITH YOUR MONEY! WEEEEEE 🤑 🤑 🤑 "><img id="bee" src="kissclipart-cartoon-bee-clipart-european-dark-bee-insect-fffe407b1dcaf08f.png" height="300px" width="300px"></span>
+
+                    
+
+                </div>
+                <div id="links" class="col-lg-2">  <a  href="shop.html">⊛GAMES </a><br><a href="games.html">⊛SHOP </a> <br>  <a  href="shop.html">⊛VIDEOS </a></div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="card">
+                <div class="card-header">
+                  BUSY BEE
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>FINANCIAL EDUCATIONAL GAME FOR KIDS AGE 6 - 8 </p>
+                    <footer class="blockquote-footer">San Diego <cite title="Source Title">California</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+<!--js functions for hover-modals-->
+      <script>
+            $(document).ready(function() {
+            $('[data-toggle="popover"]').popover({
+            placement: 'right',
+            trigger: 'hover'
+                });
+            });
+      </script>
+
+       
