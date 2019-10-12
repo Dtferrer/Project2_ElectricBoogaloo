@@ -63,6 +63,11 @@ module.exports = function(app) {
     res.render("shop");
   });
 
+
+  app.get("/games", function(req, res) {
+  res.render("games");
+  });
+  
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
