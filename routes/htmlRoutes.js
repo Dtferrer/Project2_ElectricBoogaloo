@@ -47,6 +47,20 @@ module.exports = function(app) {
       });
   });
 
+  //test
+
+  // app.get("/shop", function(req, res) {
+  //   res.render("shop", {
+  //     msg: ""
+  //   });
+  // });
+
+  // app.get("/accounts", function(req, res) {
+  //   res.render("account-page", {
+  //     msg: ""
+  //   });
+  // });
+
   // Load example page and pass in an example by id
   app.get("/accounts/:accountId/shop", function(req, res) {
     console.log("finding purchases...");
