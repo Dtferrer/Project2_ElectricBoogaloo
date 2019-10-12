@@ -1,56 +1,22 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
+var $newUser = $("#newUser");
+var $exampleInputPassword1 = $("#exampleInputPassword1");
 var $submitBtn = $("#submit");
-//var $exampleInputPassword1 = $("#exampleInputPassword1");
+
+console.log("DING");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  createUser: function(account) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
-      data: JSON.stringify(example)
-    });
-  },
-  getExamples: function() {
-    return $.ajax({
-      url: "api/examples",
-      type: "GET"
+      url: "api/accounts",
+      data: JSON.stringify(account)
     });
   }
-};
-
-// refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
-      var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
-
-      var $li = $("<li>")
-        .attr({
-          class: "list-group-item",
-          "data-id": example.id
-        })
-        .append($a);
-
-      var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
-
-      $li.append($button);
-
-      return $li;
-    });
-
-    $exampleList.empty();
-    $exampleList.append($examples);
-  });
 };
 
 // handleFormSubmit is called whenever we submit a new example
@@ -58,22 +24,26 @@ var refreshExamples = function() {
 var handleFormSubmit = function(event) {
   event.preventDefault();
 
-  var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+  console.log("ding!");
+  var Account = {
+    username: $newUser.val(),
+    password: $exampleInputPassword1.val(),
+    total: 100,
+    checking: 50,
+    savings: 50
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  if (!(Account.username && Account.password)) {
+    alert("You must enter both a username and password!");
     return;
   }
 
-  API.saveExample(example).then(function() {
-    refreshExamples();
+  API.createUser(Account).then(function() {
+    location.href = "/";
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
+  $user.val("");
+  $exampleInputPassword1.val("");
 };
 
 // Add event listeners to the submit and delete buttons
