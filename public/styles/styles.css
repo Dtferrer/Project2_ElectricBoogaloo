@@ -19,7 +19,7 @@
  } 
 
  .card-link {
-  color: black;
+  color: #151515;
       
 }
 
@@ -51,18 +51,8 @@
   text-shadow: 0 13.36px 8.896px #8d8372,0 -2em 1em #fff;
 }
 
-.jumbotron{
-    background: #f4d06f;
-    color: #333333;
-    font-family: 'Luckiest Guy', cursive;
-    border: .3em solid #151515;
-    border-radius: 8px;
-    padding-top: 1.5em;
-    padding-bottom: 1em    
-}
-
-body{
-    background: #fcf5e3
+body {
+    background: #fcf5e3;
 }
 
 #bee{
@@ -70,7 +60,6 @@ body{
 }
 
 #links {
-   
     font-size: 2em;
     font-weight: bold;
     font-family: 'Luckiest Guy', cursive;
@@ -266,7 +255,7 @@ body{
 
 /*--------accounts----*/
 
-.jumbotron{
+.jumbotron {
   margin-top: .5em;
   text-align: center;
   font-weight: bold;
@@ -275,7 +264,7 @@ body{
   font-size: 50px;
 }
 
-#intro{
+#intro {
   margin-top: .5em;
   text-align: center;
   font-weight: bold;
