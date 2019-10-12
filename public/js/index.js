@@ -1,7 +1,9 @@
 // Get references to page elements
-var $user = $("#user");
+var $newUser = $("#newUser");
 var $exampleInputPassword1 = $("#exampleInputPassword1");
 var $submitBtn = $("#submit");
+
+console.log("DING");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
@@ -22,9 +24,13 @@ var API = {
 var handleFormSubmit = function(event) {
   event.preventDefault();
 
+  console.log("ding!");
   var Account = {
-    username: $user.val().trim(),
-    password: $exampleInputPassword1.val().trim()
+    username: $newUser.val(),
+    password: $exampleInputPassword1.val(),
+    total: 100,
+    checking: 50,
+    savings: 50
   };
 
   if (!(Account.username && Account.password)) {
@@ -32,7 +38,7 @@ var handleFormSubmit = function(event) {
     return;
   }
 
-  API.createUser(example).then(function() {
+  API.createUser(Account).then(function() {
     location.href = "/";
   });
 
