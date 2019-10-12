@@ -51,151 +51,218 @@
   text-shadow: 0 13.36px 8.896px #8d8372,0 -2em 1em #fff;
 }
 
-
-
-
-
-h4 {
-  text-align: center;
-  font-size: 3em;
-  font-weight: bold;
-  font-family: 'Luckiest Guy', cursive;
-  color: #151515;
-  -webkit-text-stroke: .001em;
-  -webkit-text-stroke-color: #f9ca2c;
+.jumbotron{
+    background: #f4d06f;
+    color: #333333;
+    font-family: 'Luckiest Guy', cursive;
+    border: .3em solid #151515;
+    border-radius: 8px;
+    padding-top: 1.5em;
+    padding-bottom: 1em    
 }
 
-h3, h5 {
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-  font-family: 'Luckiest Guy', cursive;
-  color: #f9ca2c;
-  -webkit-text-stroke: .001em;
+body{
+    background: #fcf5e3
 }
 
-h6 {
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-  font-family: 'Luckiest Guy', cursive;
-  color: #151515;
+#bee{
+    float: right;
 }
 
-hr {
-  margin-top: .2em;
-  margin-bottom: 2em;
-  background-color: black;
-  border: black;
-  height: 0.5em;
-  border-radius: 8px;
-  width: 95%;
-}
+#links {
+   
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;    
+   } 
 
-#css-toggle {
-  width: 16em;
-  margin-top: 1.5em;
-  background-color:#f4d06f;
-  border: #f4d06f;
-  border-radius: 8px;
-  padding-top: 1em;
-}
+   a:link {
+    color: #f9ca2c;
+  }
+  
 
-#rate, #balance, #play {
-  width: 16em;
-  border-radius: 8px;
-  padding-top: 1em;
-}
+   #accounts {
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+   
+    
+   }
 
-#logout {
-  width: 13em;
-  background-color: #151515;
-  border: .3em solid #f9ca2c;
-  border-radius: 8px;
-  padding-top: 1em;
-  margin-top: 1em;
-  padding-top: 1.5em;
-}
+    #text1{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+    border: .3em solid #151515;
+    border-radius: 8px;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
 
-#logouttext {
-  text-align: center;
-  font-size: 2em;
-  font-family: 'Luckiest Guy', cursive;
-  color: #f9ca2c;
-}
+   }
+
+   #videos{
+    font-size: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+   } 
+
+ ------------------------------------------------------
 
 
-#buttondiv {
-  text-align: center;
-}
+  .list-group-item {
+    line-height: 2.5;
+  }
+  
+  h1 {
+    margin-top: .5em;
+    text-align: center;
+    font-size: 8em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+    text-shadow: 0 13.36px 8.896px #8d8372,0 -2em 1em #fff;
+  }
+  
+  h4 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #151515;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #f9ca2c;
+  }
+  
+  h3, h5 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+  }
+  
+  h6 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #151515;
+  }
+  
+  hr {
+    margin-top: .2em;
+    margin-bottom: 2em;
+    border: #151515;
+    background-color: #151515;
+    height: 0.5em;
+    border-radius: 8px;
+    width: 95%;
+  }
+  
+  #css-toggle {
+    width: 16em;
+    margin-top: 1.5em;
+    background-color: #151515;
+    border: #f9ca2c;
+    border-radius: 8px;
+    padding-top: .5em;
+  }
+  
+  #rate {
+    width: 16em;
+    background-color: #151515;
+    border: #f9ca2c;
+    border-radius: 8px;
+    padding-top: .5em;
+  }
+  
+  #balance {
+    width: 16em;
+    background-color: #151515;
+    border: #f9ca2c;
+    border-radius: 8px;
+    padding-top: .5em;
+  }
+  
+  #buttondiv {
+    text-align: center;
+  }
+  
+  #account, #games, #video {
+    width: 17em;
+    background-color: #f9ca2c;
+    border: .3em solid #151515;
+    border-radius: 8px;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+  }
+  
+  #account {
+    margin-top: 2em;
+  }
+  
+  #games, #shop {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  #darkmode {
+    border: .2em solid #f9ca2c;
+    border-radius: 8px;
+    margin-left: 4.5em;
+  }
+  
+  #linkscolumn {
+    margin-top: 4em;
+    border: .4em solid #151515;
+    border-radius: 8px;
+    background-color: #f7e1a6;
+  }
+  
+  #beeimage {
+    margin-right: 3em;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+  }
 
-#accounts, #games, #shop, #videos {
-  width: 17em;
-  background-color: #f9ca2c;
-  border: .3em solid #151515;
-  border-radius: 8px;
-  padding-top: 1.5em;
-  padding-bottom: 1em;
-}
-
-#accounts {
-  margin-top: 2em;
-}
-
-#games, #shop {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-#darkmode {
-  border: .2em solid #f9ca2c;
-  border-radius: 8px;
-  margin-left: 4.5em;
-}
-
-#crystal {
-  border: .2em solid #f9ca2c;
-  border-radius: 8px;
-}
-
-#linkscolumn {
-  margin-top: 4em;
-  border: .4em solid #151515;
-  border-radius: 8px;
-  background-color: #f7e1a6;
-}
-
-#bee {
-  margin-right: 3em;
-}
-
-#bee2{
-  float: right;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: bold;
-  font-family: 'Luckiest Guy', cursive;
-  color: #f9ca2c;
-  -webkit-text-stroke: .001em;
-  -webkit-text-stroke-color: #151515;
-}
-
-#gamesFooter {
-  position: relative;
-  bottom: 0;
-  text-align: left;
-  font-size: 1.6em;
-  font-weight: bold;
-  font-family: 'Luckiest Guy', cursive;
-  color: #f9ca2c;
-  -webkit-text-stroke: .001em;
-  -webkit-text-stroke-color: #151515;
-}
+  #gamesFooter {
+    position: relative;
+    bottom: 0;
+    text-align: left;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    color: #f9ca2c;
+    -webkit-text-stroke: .001em;
+    -webkit-text-stroke-color: #151515;
+    margin-top: 1em;
+  }
 
 /*--------accounts----*/
 
