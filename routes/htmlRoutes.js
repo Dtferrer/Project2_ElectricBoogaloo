@@ -5,15 +5,7 @@ console.log("db.Account", db.Account);
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    res.render("index", {
-      msg: "Welcome!"
-    });
-  });
-
-  app.get("/login", function(req, res) {
-    res.render("index", {
-      msg: "Login"
-    });
+    res.render("index");
   });
 
   //create user
@@ -26,21 +18,20 @@ module.exports = function(app) {
   //accounts page
   app.get("/accounts/:accountId", function(req, res) {
     console.log("finding account...");
-    db.Account.findAll({
+    db.Account.findOne({
       where: {
-        AccountId: req.params.accountId
+        username: req.params.accountId
       }
     })
       .then(function(accounts) {
         console.log("accounts", accounts);
         res.render("account-page", {
-          msg: "Hey!",
           accounts: accounts
         });
       })
       .catch(function(err) {
         console.log(
-          "ERR - Failed to load Accounts for User ID: " + userId,
+          "ERR - Failed to load Accounts for User ID: " + AccountId,
           err
         );
         res.redirect("404");

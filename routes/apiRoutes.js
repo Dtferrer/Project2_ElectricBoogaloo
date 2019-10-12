@@ -24,9 +24,10 @@ module.exports = function(app) {
   app.get("/api/accounts/:accountId", function(req, res) {
     db.Account.findOne({
       where: {
-        accountId: req.params.accountId
+        username: req.params.accountId
       }
     }).then(function(dbAccount) {
+      console.log(dbAccount);
       res.json(dbAccount);
     });
   });
