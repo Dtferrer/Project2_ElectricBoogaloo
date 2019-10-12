@@ -1,33 +1,37 @@
-  <div id="loginHome">
-
+  <body id="logBody">
+        
+   
    <div class="col-8 offset-2">
-        <h2 class="text-center">Welcome to Buzzy Bee Banking!</h2>  
+        <h1 id="title1" class="text-center">Welcome to Busy Bee Banking!</h1>  
     <form class="clearfix mb-4" action="POST">
         <div class="form-group">
           <label for="exampleInputEmail1">Username</label>
-          <input type="text" class="form-control" id="user" aria-describedby="emailHelp">
+          <input type="text" class="form-control" id="user" aria-describedby="emailHelp" name="userid">
           
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" class="form-control" id="exampleInputPassword1" name="pswrd">
         </div>
+        <input id="signinBtn" type="button" onclick="check(this.form)" value="LogIn"/>
        
-        <button type="submit" class="button">Sign In</button>
-        or <a href="" class="card-link">Sign Up!</a>
-      </form>
-      <img src="sccpre.cat-beehive-png-5160421.png">
-</div>
-<footer class="footer">@2019 Danica Ferrer, Daniel Gomez, Ruth Vazquez & Scott Goodrich</footer>
-<script type="text/javascript">
+        or <a href="createUsr.html" class="card-link">Sign Up!</a>
 
-//this will check  userid & password
+        <img id="beeHive" src="sccpre.cat-beehive-png-5160421.png">
+      </form>
+     
+</div>
+<div class="footer">
+    <p>@2019 Danica Ferrer, Daniel Gomez, Ruth Vazquez & Scott Goodrich<p>
+    </div>
+
+<script>
 
 function check(form) {
   if(form.userid.value == "ruth" && form.pswrd.value == "vazquez") {
-    //if username and password match it will take the user to their account (Dan's Page)
+   
     console.log("it worked!!");
-    //target.html needs to be changed, 
+    
     window.open('target.html')
   }
   else {
