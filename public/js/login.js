@@ -1,7 +1,6 @@
 var $user = $("#user");
 var $exampleInputPassword1 = $("#exampleInputPassword1");
 var $submitBtn = $("#submit");
-var daUser;
 
 console.log("DING");
 
