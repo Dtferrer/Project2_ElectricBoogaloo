@@ -1,5 +1,6 @@
  
 
+<<<<<<< HEAD
         <div class="jumbotron" style="background: #f9ca2c">
   <h1 class="display-4">Welcome {{ accounts.username }} to your account details page!</h1>
   <p class="lead">ON THIS PAGE YOU WILL BE ABLE TO VIEW YOUR ACCOUNT INFORMATION, LIKE HOW MANY COINS YOU HAVE ACCUMULATED. IT DISPLAYS BOTH OF YOU ACCOUNTS (SAVINGS AND CHECKINGS) IF YOU HOVER OVER ANY OF YOUR ACCOUNTS YOU WILL SEE A SHORT DESCRIPTION OF THE ACCOUNT AND EDUCATIONAL INFORMATION,  YOU WILL ALSO BE ABLE TO FIND LINKS TO GAMES WHERE YOU CAN PLAY AND HAVE THE OPPORTUNITY TO WIN MORE COINS, THERE'S ALSO A SHOP WHERE YOU CAN SPEND YOUR COINS ON DIFFERENT COOL STUFF <br><img id="bee2" src="/images/Bee.png" height="80px" width="80px">
@@ -10,6 +11,15 @@
 
 <div class="container">
             <div class="text-center"><h1 id = "total" data = {{accounts.total}}  id="accounts2">Balance----------<span data-toggle="popover" title="YOUR BALANCE IS" data-content="THE MONEY YOU HAVE ACCUMULATED AT THIS EXACT MONENT AND IT WILL INCREASE OR DECREASE DEPENDING ON YOUR TRANSACTIONS."> $ {{accounts.total}} </span></h1>
+=======
+                  <h1 id="links" class="display-4">Welcome {{accounts.username}} to your account details page!</h1>
+
+                  <h1 style="font-family: 'Luckiest Guy', cursive;" class="lead">ON THIS PAGE YOU WILL BE ABLE TO VIEW YOUR ACCOUNT INFORMATION, LIKE HOW MANY COINS YOU HAVE ACCUMULATED. IT DISPLAYS BOTH OF YOU ACCOUNTS (SAVINGS AND CHECKINGS) IF YOU HOVER OVER ANY OF YOUR ACCOUNTS YOU WILL SEE A SHORT DESCRIPTION OF THE ACCOUNT AND EDUCATIONAL INFORMATION,  YOU WILL ALSO BE ABLE TO FIND LINKS TO GAMES WHERE YOU CAN PLAY AND HAVE THE OPPORTUNITY TO WIN MORE COINS, THERE'S ALSO A SHOP WHERE YOU CAN SPEND YOUR COINS ON DIFFERENT COOL STUFF <br><img id="bee" src="kissclipart-cartoon-bee-clipart-european-dark-bee-insect-fffe407b1dcaf08f.png" height="80px" width="80px"></h1>
+                </div>
+        </div>
+        <div class="container">
+            <div class="text-center"><h1 id = "total" data = {{accounts.total}} class="accounts">Balance----------<span class="badge badge-danger" data-toggle="popover" title="YOUR BALANCE IS" data-content="THE MONEY YOU HAVE ACCUMULATED AT THIS EXACT MONENT AND IT WILL INCREASE OR DECREASE DEPENDING ON YOUR TRANSACTIONS."> $ {{accounts.total}} </span></h1>
+>>>>>>> a24418afcd2facea36f3019b0b9a9bec8b8807b0
             </div>
             <br>
             <br>
@@ -17,14 +27,22 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                  <!--SAVINGS-->
+<<<<<<< HEAD
                 <h1><span id="accounts2"  data-toggle="popover" title="SAVINGS IS " data-content="AN ACCOUNT NOT INTENDED FOR DAILY USE, BUT IS INSTEAD MEANT TO STAY IN THE ACCOUNT, BE SAVED IN THE ACCOUNT SO THAT IT MIGHT EARN INTEREST OVER TIME.">SAVINGS $ {{accounts.savings}}</span></h1>                 
+=======
+                <h1><span id = "savings" data = {{accounts.savings}} class="accounts" class="badge badge-danger"  data-toggle="popover" title="SAVINGS IS " data-content="AN ACCOUNT NOT INTENDED FOR DAILY USE, BUT IS INSTEAD MEANT TO STAY IN THE ACCOUNT, BE SAVED IN THE ACCOUNT SO THAT IT MIGHT EARN INTEREST OVER TIME.">SAVINGS $ {{accounts.savings}}</span></h1>                 
+>>>>>>> a24418afcd2facea36f3019b0b9a9bec8b8807b0
                 </div>
 
                 
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5">
                  <!--CHECKINGS-->
+<<<<<<< HEAD
                  <h1><span id="accounts2" id = "checking" data = {{accounts.checking}}  data-toggle="popover" title=" CHECKING IS " data-content=" A TYPE OF BANK DEPOSIT ACCOUNT THAT IS DESIGNED FOR EVERYDAY MONEY TRANSACTIONS">CHECKING  ${{accounts.checking}}</span></h1>  
+=======
+                 <h1><span id = "checking" data = {{accounts.checking}} class="accounts" class="badge badge-danger"  data-toggle="popover" title=" CHECKING IS " data-content=" A TYPE OF BANK DEPOSIT ACCOUNT THAT IS DESIGNED FOR EVERYDAY MONEY TRANSACTIONS">CHECKING  $ {{accounts.checking}}</span></h1>  
+>>>>>>> a24418afcd2facea36f3019b0b9a9bec8b8807b0
                 
                 </div>            
         </div>  
@@ -57,7 +75,11 @@
                     
 
                 </div>
+<<<<<<< HEAD
                 <div id="links" class="col-lg-2">  <a  href = "/accounts/ + {{accounts.username}} +  /shop">⊛SHOP</a><br><a href="?games">⊛GAMES</a> <br>  <a  href="/videos">⊛VIDEOS </a></div>
+=======
+                <div id="links" class="col-lg-2">  <a  href = "/accounts/ + {{accounts.username}} + /shop">⊛SHOP</a><br><a href="?games">⊛GAMES</a> <br>  <a  href="/videos">⊛VIDEOS </a></div>
+>>>>>>> a24418afcd2facea36f3019b0b9a9bec8b8807b0
 
             </div>
         </div>
