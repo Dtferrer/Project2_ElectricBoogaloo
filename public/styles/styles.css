@@ -53,6 +53,8 @@
 
 
 
+
+
 h4 {
   text-align: center;
   font-size: 3em;
@@ -70,7 +72,6 @@ h3, h5 {
   font-family: 'Luckiest Guy', cursive;
   color: #f9ca2c;
   -webkit-text-stroke: .001em;
-  -webkit-text-stroke-color: #151515;
 }
 
 h6 {
@@ -84,8 +85,8 @@ h6 {
 hr {
   margin-top: .2em;
   margin-bottom: 2em;
-  border: #151515;
-  background-color: #151515;
+  background-color: black;
+  border: black;
   height: 0.5em;
   border-radius: 8px;
   width: 95%;
@@ -94,15 +95,14 @@ hr {
 #css-toggle {
   width: 16em;
   margin-top: 1.5em;
-  background-color: #151515;
-  border: #f9ca2c;
+  background-color:#f4d06f;
+  border: #f4d06f;
   border-radius: 8px;
   padding-top: 1em;
 }
 
 #rate, #balance, #play {
   width: 16em;
-  background-color: #151515;
   border-radius: 8px;
   padding-top: 1em;
 }
@@ -169,6 +169,10 @@ hr {
   margin-right: 3em;
 }
 
+#bee2{
+  float: right;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -192,3 +196,35 @@ footer {
   -webkit-text-stroke: .001em;
   -webkit-text-stroke-color: #151515;
 }
+
+/*--------accounts----*/
+
+.jumbotron{
+  margin-top: .5em;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Luckiest Guy', cursive;
+  color: #f9ca2c;
+  font-size: 50px;
+}
+
+#intro{
+  margin-top: .5em;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Luckiest Guy', cursive;
+  color: #f9ca2c;
+  font-size: 40px;
+  -webkit-text-stroke: .001em;
+  -webkit-text-stroke-color: #151515;
+ 
+}
+
+#accounts2 {
+  font-weight: bold;
+  font-family: 'Luckiest Guy', cursive;
+  color: #f9ca2c;
+  font-size: 40px;
+  -webkit-text-stroke: .001em;
+  -webkit-text-stroke-color: #151515; 
+ }
